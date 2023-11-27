@@ -1,0 +1,162 @@
+/* styles.css */
+
+.body-customer {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+
+/* menu.css */
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+.menu-container {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li.menu {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+form.search {
+  margin: 0px;
+}
+
+input.keyword {
+  width: 100%;
+  max-width: 110px;
+}
+
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* styles.css */
+
+.custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-menu-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button {
+  margin-right: 5px;
+}
+
+.custom-logout-button {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  /* Hiển thị menu dọc khi kích thước màn hình nhỏ hơn 600px */
+
+  .custom-menu-buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .custom-menu-buttons > * {
+    margin-bottom: 10px;
+  }
+}
